@@ -1,5 +1,5 @@
 {
-    "name": "mybehat/behat",
+    "name": "behat/behat",
     "version": "v3.3.0-patch0",
     "description": "Scenario-oriented BDD framework for PHP 5.3",
     "keywords": ["BDD", "ScenarioBDD", "StoryBDD", "Examples", "Scrum", "Agile", "User story", "Symfony", "business", "development", "testing", "documentation"],
