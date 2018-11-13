@@ -76,10 +76,10 @@ final class FilterController implements Controller
     {
         $filters = array();
         foreach ($input->getOptions() as $option => $data) {
-            if (strpos($option, 'filter-') === 0 && ($data === null || is_array($data) && count($data) > 0)) {
+            if (strpos($option, 'filter-') === 0 && ($data != null || is_array($data) && count($data) > 0)) {
                 if ($data === null || is_array($data) && count($data) > 0)
-                $filterName = substr($option, 7);
-                $filter[] = $this->percolator->getFilter($filterName, $data);
+                    $filterName = substr($option, 7);
+                $filters[] = $this->percolator->getFilter($filterName, $data);
             }
         }
 
